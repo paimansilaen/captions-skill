@@ -20,9 +20,8 @@
 - Voice-over TTS: `/opt/hatch/bin/tts speak --text ... --language id --voice <id> --output <file.mp3>`.
   Female narration voice is Aria (`avocado_v2:MAI_01`); male default is Helio (`avocado_v2:MAI_03`).
 - Downloads: yt-dlp at `~/workspace/tools/yt-dlp`.
-- faster-whisper is NOT installed yet. Install it before making word timings:
-  `pip install faster-whisper` (CPU, model `small` downloads ~500 MB on first run).
-  On this VM it lives in a venv: run words_from_voice.py with
+- faster-whisper 1.2.1 is installed in a venv here (2026-11-26), with the `small`
+  model already downloaded (~464 MB in ~/.cache/huggingface). Run words_from_voice.py with
   `~/workspace/custom-skills/captions/venv/bin/python`.
   If it cannot be installed, fall back to manual word timings (step 1 below).
 - No ElevenLabs, no After Effects, no Keylight on this VM. Never promise them.
